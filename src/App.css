@@ -2,7 +2,10 @@
   background-color: lightgrey;
   text-align: center;
 }
-
+body{
+  background-color: #858586;
+  height: 100vh;
+}
 h1 {
   margin-bottom: 0;
 }
@@ -18,13 +21,17 @@ input[type="button"] {
   background-color: #02203c;
   color: white;
 }
-
+.board_div{
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
 .board {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .tile {
@@ -33,7 +40,4 @@ input[type="button"] {
   width: 20px;
   height: 20px;
   background-color: white;
-}
-.red{
-  background-color: red;
 }

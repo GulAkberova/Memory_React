@@ -75,8 +75,10 @@ export default function Memory() {
 
   return (
     <>
+     <div className="board_div">
       <h1> {foundBg.length === TILE_COLORS.length ? "You Win" : "Memory"}</h1>
-      <div className="board">
+   
+    <div className="board">
         {
           all && all.map((i,key)=>(
             <div
@@ -93,10 +95,12 @@ export default function Memory() {
         }
      
       </div>
+ 
 
       {
         foundBg.length === TILE_COLORS.length && <button onClick={() => RestartGame()}>Restart</button>
       }
+         </div>
     </>
   );
 }
